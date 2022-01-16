@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node index.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/paul-mcglinchey/formengineapi/issues"
   },
-  "homepage": "https://github.com/paul-mcglinchey/formengineapi#readme"
+  "homepage": "https://github.com/paul-mcglinchey/formengineapi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
