@@ -10,7 +10,7 @@ const FieldSchema = new Schema({
 
 const SectionSchema = new Schema({
   sectionName: { type: String, required: true },
-  fields: [FieldSchema]
+  fields: { type: Map, of: FieldSchema }
 }, { timestamps: true })
 
 const Field = mongoose.model(
